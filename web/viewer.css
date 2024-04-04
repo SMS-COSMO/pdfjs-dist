@@ -1,3 +1,7 @@
+html {
+  user-select: none;
+}
+
 #sidebarContainer {
   border-right: 2px solid #E4E7ED !important;
 }
@@ -14,7 +18,8 @@
 #scaleSelectContainer,
 .dropdownToolbarButton>select,
 .toolbarButton,
-#secondaryToolbar {
+#secondaryToolbar,
+.toolbarLabel {
   border-radius: 5px !important;
 }
 
@@ -22,7 +27,7 @@
   cursor: pointer !important;
 }
 
-#pageNumber {
+#pageNumber, #findInput {
   border-radius: 5px !important;
   height: 14px;
   border: 2px solid #E4E7ED;
@@ -30,7 +35,9 @@
 
 #editorModeButtons,
 #editorModeSeparator,
-#toolbarViewerRight {
+#secondaryToolbarToggle,
+#toolbarViewerRight > div.hiddenMediumView.verticalToolbarSeparator,
+#print {
   display: none;
 }
 
@@ -42,6 +49,13 @@
 #documentProperties,
 #secondaryToolbarButtonContainer > div:nth-child(19) {
   display: none;
+}
+
+#findbar {
+  border: 2px solid #E4E7ED;
+  box-shadow: none;
+  border-radius: 8px;
+  padding: 8px;
 }
 
 /* Copyright 2014 Mozilla Foundation
